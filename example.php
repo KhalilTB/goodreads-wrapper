@@ -1,15 +1,16 @@
 <?php
   session_start();
-  require('vendor/autoload.php');
+  require('../../vendor/autoload.php');
   use jarboleda\Goodreads as Goodreads;
 
   define('REQUEST_TOKEN_URL', 'http://www.goodreads.com/oauth/request_token');
   define('ACCESS_TOKEN_URL', 'http://www.goodreads.com/oauth/access_token');
   define('AUTHORIZE_URL', 'http://www.goodreads.com/oauth/authorize');
-  define('BASE_URL', 'your_url');
 
-  $consumer_key = 'your_consumer_key';
-  $consumer_secret = 'your_consumer_secret';
+  // change me
+  define('BASE_URL', 'YOUR_URL');
+  $consumer_key = 'YOUR_CONSUMER_KEY';
+  $consumer_secret = 'YOUR_CONSUMER_SECRET';
 
   if(!isset($_GET['authorize'])){
     /* REQUEST TOKEN */
@@ -40,11 +41,11 @@
     $username = $api->get_user_name($auth_user_id);
 
     $books = $api->get_reviews(array('id'       => $auth_user_id,
-                                   'v'        => 2,
-                                   'shelf'    => 'read',
-                                   'per_page' => 6,
-                                   'sort'     => 'date_read',
-                                   'order'    => 'd'));
+                                     'v'        => 2,
+                                     'shelf'    => 'read',
+                                     'per_page' => 6,
+                                     'sort'     => 'date_read',
+                                     'order'    => 'd'));
 
     header("Content-type: text/xml");
     echo $books->asXML();
