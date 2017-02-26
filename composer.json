@@ -1,0 +1,24 @@
+{
+    "name": "jarboleda/goodreads-wrapper",
+    "description": "Goodreads API wrapper with OAuth",
+    "type": "library",
+    "require": {
+        "svyatov/curlwrapper": "^1.3"
+    },
+    "require-dev": {
+        "svyatov/curlwrapper": "^1.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeferson Arboleda",
+            "email": "jota259@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "jarboleda": "src/"
+        }
+    }
+}
