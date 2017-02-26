@@ -1,33 +1,34 @@
-# Product Name
-> Short blurb about what your product does.
+# Goodreads wrapper
+> Goodreads API wrapper, PSR-4 complaint. WORK IN PROGRESS
 
-[![NPM Version][npm-image]][npm-url]
+<!-- [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+[![Downloads Stats][npm-downloads]][npm-url] --> 
 
-One to two paragraph statement about your product and what it does.
+<!--One to two paragraph statement about your product and what it does.-->
 
-![](http://placehold.it/700x400)
+![](https://s.gr-assets.com/assets/press/thumbnail_logo-a0e66b2e27d2b52773b0ddab4e10ea4a.jpg)
 
 ## Installation
 
 OS X & Linux:
 
 ```sh
-npm install my-crazy-module --save
+composer require jarboleda/goodreads-wrapper
 ```
 
-Windows:
+<!--Windows:
 
 ```sh
 edit autoexec.bat
 ```
+-->
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+Check example.php
 
-## Development setup
+<!--## Development setup
 
 Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
 
@@ -35,6 +36,7 @@ Describe how to install all development dependencies and how to run an automated
 make install
 npm test
 ```
+-->
 
 ## Contributing
 
@@ -46,22 +48,15 @@ npm test
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
 * 0.1.0
     * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
+    * CHANGE: Correct autoloader path
 * 0.0.1
     * Work in progress
 
 ## Meta
 
-Jeferson Arboleda – [@YourTwitter](https://twitter.com/dbader_org) – me@jglab.me
+Jeferson Arboleda – me@jglab.me
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
