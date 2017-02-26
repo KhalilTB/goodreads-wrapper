@@ -11,10 +11,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jeferson Arboleda"
+            "name": "jarboleda"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
             "jarboleda": "src/"
