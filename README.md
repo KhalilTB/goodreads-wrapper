@@ -7,7 +7,7 @@
 
 One to two paragraph statement about your product and what it does.
 
-![](http://placehold.it/1200x720)
+![](http://placehold.it/700x400)
 
 ## Installation
 
