@@ -1,6 +1,6 @@
 <?php
   session_start();
-  require('../../vendor/autoload.php');
+  require('../../autoload.php');
   use jarboleda\Goodreads as Goodreads;
 
   define('REQUEST_TOKEN_URL', 'http://www.goodreads.com/oauth/request_token');
