@@ -11,8 +11,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jeferson Arboleda",
-            "email": ""
+            "name": "Jeferson Arboleda"
         }
     ],
     "minimum-stability": "dev",
