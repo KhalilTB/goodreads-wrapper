@@ -135,11 +135,21 @@ class Goodreads{
 
   function get_review($review_id, $endpoint = 'https://www.goodreads.com/review/show.xml'){
     $data = array('id' => $review_id);
-    return $this->generic_request($endpoint, 'GET', $data)->review;
+    return $this->generic_request($endpoint, 'GET', $data);
   }
 
   function edit_review($data = array(), $endpoint){
     return $this->generic_request($endpoint, 'POST', $data);
+  }
+
+  function get_shelves($data = array(), $endpoint = 'https://www.goodreads.com/user/show/'){
+    $endpoint .= $data['user_id'] . '.xml';
+    return $this->generic_request($endpoint, 'GET', $data)->user[0]->user_shelves[0];
+  }
+
+  function get_progress($data, $endpoint = 'https://www.goodreads.com/user/show/'){
+    $endpoint .= $data['user_id'] . '.xml';
+    return (string)$this->generic_request($endpoint, 'GET', $data)->xpath("//percent")[0]; // [0] -> last updated book
   }
 
   function test_api_key($key){
