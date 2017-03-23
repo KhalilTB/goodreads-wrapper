@@ -1,5 +1,5 @@
 # Goodreads wrapper
-> Goodreads API wrapper, PSR-4 complaint. WORK IN PROGRESS
+> Goodreads API wrapper, available in packagist. WORK IN PROGRESS
 
 <!-- [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
